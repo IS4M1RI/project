@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="./../js/productos.js">
+    </script>
+</head>
+<a href="page1"></a>
+<body>
+    <center><h1>Productos</h1></center>
+<button id="btnAdd" onclick="abrir_modal()">Añadir</button>
+<div id="div_form" style="display: block;border: 1px solid; margin-bottom: 10px;">
+    <h3>añadir nuevo producto</h3> 
+    <form action="#" id="form_producto">
+     <label for="codigo">Código</label>
+     <input type="text" id="codigo" name="codigo">
+     <br>
+     <label for="nombre">Nombre</label>
+     <input type="text" id="nombre" name="nombre">
+     <br>
+     <label for="iva">Iva</label>
+     <input type="number" id="iva" min=0 max=100 name="iva">
+     <br>
+    </form>
+    <button onclick="cerrar_modal()">Cancelar</button>
+    <button onclick="guardar_producto();">guardar</button>
+</div>
+    <table id="lista" style="width: 100%; border: 1px solid;">
+        <thead><tr>
+            <th>#</th>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Iva</th>
+            <th>editar</th>
+            <th>eliminar</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
