@@ -11,9 +11,9 @@
 <body>
     <center><h1>Productos</h1></center>
 <button id="btnAdd" onclick="abrir_modal()">Añadir</button>
-<div id="div_form" style="display: block;border: 1px solid; margin-bottom: 10px;">
+<div id="div_form" style="display: none;border: 1px solid; margin-bottom: 10px;">
     <h3>añadir nuevo producto</h3> 
-    <form action="#" id="form_producto">
+    <form action="#" id="form_producto"name="form_producto">
      <label for="codigo">Código</label>
      <input type="text" id="codigo" name="codigo">
      <br>
@@ -25,7 +25,7 @@
      <br>
     </form>
     <button onclick="cerrar_modal()">Cancelar</button>
-    <button onclick="guardar_producto();">guardar</button>
+    <button onclick="guardar_producto();" id="btnguardar">guardar</button>
 </div>
     <table id="lista" style="width: 100%; border: 1px solid;">
         <thead><tr>
@@ -41,6 +41,6 @@
         <tr></tr>
         </tbody>
     </table>
-
+<script>cargar_lista()</script>
 </body>
 </html>
