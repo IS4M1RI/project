@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+</head>
+<body>
+    <h1>Inventario</h1>
+<button>ingrese nuevo inventario</button>
+<div id="div_form" style="display: block;border: 1px solid; margin-bottom: 10px;">
+    <h3>añadir nuevo inventario</h3> 
+    <form action="#" id="form_inventario"name="form_inventario">
+     <label for="codigo">Código</label>
+     <input type="text" id="codigo"name="codigo"><br>
+     <label for="nombre">cedula</label>
+     <input type="text" id="cedula"name="cedula"><br>
+     <label for="valor">valor</label>
+     <input type="number" id="valor"name="valor"><br>
+    </form>
+    <button onclick="cerrar_modal()">Cancelar</button>
+    <button onclick="guardar_producto();" id="btnguardar">guardar</button>
+
+</body>
+</html>

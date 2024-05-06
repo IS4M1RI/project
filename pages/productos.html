@@ -10,19 +10,16 @@
 <a href="page1"></a>
 <body>
     <center><h1>Productos</h1></center>
-<button id="btnAdd" onclick="abrir_modal()">Añadir</button>
+<button id="btnAdd" onclick="abrir_modal()">Añadir</button><br>
 <div id="div_form" style="display: none;border: 1px solid; margin-bottom: 10px;">
     <h3>añadir nuevo producto</h3> 
     <form action="#" id="form_producto"name="form_producto">
      <label for="codigo">Código</label>
-     <input type="text" id="codigo" name="codigo">
-     <br>
+     <input type="text" id="codigo" name="codigo"><br>
      <label for="nombre">Nombre</label>
-     <input type="text" id="nombre" name="nombre">
-     <br>
+     <input type="text" id="nombre" name="nombre"><br>
      <label for="iva">Iva</label>
-     <input type="number" id="iva" min=0 max=100 name="iva">
-     <br>
+     <input type="number" id="iva" min=0 max=100 name="iva"><br>
     </form>
     <button onclick="cerrar_modal()">Cancelar</button>
     <button onclick="guardar_producto();" id="btnguardar">guardar</button>
